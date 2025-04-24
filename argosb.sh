@@ -1,9 +1,6 @@
 #!/bin/bash
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" 
-echo "甬哥Github项目  ：github.com/yonggekkk"
-echo "甬哥Blogger博客 ：ygkkk.blogspot.com"
-echo "甬哥YouTube频道 ：www.youtube.com/@ygkkk"
-echo "ArgoSB真一键无交互脚本"
+echo "尚品良品pixel ArgoSB真一键无交互脚本出站走系统代理"
 echo "当前版本：25.4.22 测试beta2版"
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 export LANG=en_US.UTF-8
@@ -194,10 +191,11 @@ cat > /etc/s-box-ag/sb.json <<EOF
             }
     }
     ],
-"outbounds": [
-{
-"type":"direct",
-"tag":"direct"
+"outbounds": [{
+"type": "socks",
+"tag": "socks-out",
+"server": "192.168.31.176",
+"server_port": 1080
 }
 ]
 }
