@@ -6,22 +6,22 @@
 
 脚本如下，默认安装为Argo临时隧道（UUID、主协议vmess端口未设变量时，为随机生成）
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/Knowitall-wiki/argosb/main/argosb.sh)
 ```
 或者
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Knowitall-wiki/argosb/main/argosb.sh)
 ```
 ---------------------------------------------------------
 
 查看Argo的固定域名、固定域名的token、临时域名：
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh) agn
+bash <(wget -qO- https://raw.githubusercontent.com/Knowitall-wiki/argosb/main/argosb.sh) agn
 ```
 
 卸载ArgoSB脚本：
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh) del
+bash <(wget -qO- https://raw.githubusercontent.com/Knowitall-wiki/argosb/main/argosb.sh) del
 ```
 ----------------------------------------------------------
 
@@ -29,21 +29,21 @@ bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.
 
 1、Argo临时隧道自定义UUID:
 ```
-uuid=你的uuid bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+uuid=你的uuid bash <(wget -qO- https://raw.githubusercontent.com/Knowitall-wiki/argosb/main/argosb.sh)
 ```
 
 2、Argo临时隧道自定义主协议vmess端口：
 ```
-vmpt=vps可使用的端口 bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+vmpt=vps可使用的端口 bash <(wget -qO- https://raw.githubusercontent.com/Knowitall-wiki/argosb/main/argosb.sh)
 ```
 
 3、Argo临时隧道自定义UUID、主协议vmess端口：
 ```
-uuid=你的uuid vmpt=vps可使用的端口 bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+uuid=你的uuid vmpt=vps可使用的端口 bash <(wget -qO- https://raw.githubusercontent.com/Knowitall-wiki/argosb/main/argosb.sh)
 ```
 
 4、Argo固定隧道 【 脚本前必须要有端口(vmpt)、固定域名(agn)、token(agk)三个变量，uuid可选 】：
 ```
-vmpt=VPS可使用的端口 agn=固定域名 agk=ey开头的token bash <(wget -qO- https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
+vmpt=VPS可使用的端口 agn=固定域名 agk=ey开头的token bash <(wget -qO- https://raw.githubusercontent.com/Knowitall-wiki/argosb/main/argosb.sh)
 ```
 
