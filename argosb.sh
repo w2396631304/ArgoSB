@@ -194,7 +194,7 @@ cat > /etc/s-box-ag/sb.json <<EOF
 "outbounds": [{
 "type": "socks",
 "tag": "socks-out",
-"server": "192.168.31.176",
+"server": "192.168.0.1",
 "server_port": 1080
 }
 ]
